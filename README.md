@@ -14,3 +14,10 @@ b. what it means? guest:guest@localhost:5672 , what is the first guest, and what
 c. Simulation slow subscriber.
 ![Commit 4 screen capture](assets/images/commit4.png)
 Dapat dilihat pada grafik, queued messages nya mencapai 20. Saat itu saya menjalankan publisher 5 kali dalam waktu yang cepat. Itu artinya terdapat 20 messages dalam antrian yang menunggu diiconsume. Hal ini bisa terjadi karena ada sleep dan saya menjalankan publisher sebanyak 5 kali secara cepat.
+
+<br>
+
+d. Reflection and Running at least three subscribers.
+![Commit 5_1 screen capture](assets/images/commit5_1.png)
+![Commit 5_2 screen capture](assets/images/commit5_2.png)
+Gambar pertama menunjukkan saya menjalankan subscriber dalam 3 console. gambar kedua menunjukkan grafik pada RabbitMQ yang terlihat berbeda dari ketika saat menjalankan subscriber hanya pada 1 console. Dapat terlihat bahwa queued messages nya sekarang hanya belasan, padahal yang saya lakukan sama yaitu menjalankan publisher 5 kali dalam waktu cepat. Hal ini bisa terjadi karena message diconsume secara parallel oleh 3 subscriber (secara concurrently) sehingga mempercepat proses konsumsi dan queued messagenya jadi lebih sedikit.
