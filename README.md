@@ -7,7 +7,7 @@ a. what is amqp?
 <br>
 
 b. what it means? guest:guest@localhost:5672 , what is the first guest, and what is the second guest, and what is localhost:5672 is for?  
-> ```guest:guest@localhost:5672``` adalah sebuah string berformat URL yang digunakan sebagai spesifikasi detail connection untuk AMPQ yang digunakan. Lalu guest yang pertama maksudnya adalah username, sedangkan guest yang kedua maksudnya adalah password. Pada bagian```localhost:5672```, maksudnya adalah localhost sebagai hostname/ip address tempat AMPQ dijalankan, sedangkan 5672 merupakan port tempat AMPQ berkomunikasi (me-listen).
+> ```guest:guest@localhost:5672``` adalah sebuah string berformat URL yang digunakan sebagai spesifikasi detail connection untuk AMQP yang digunakan. Lalu guest yang pertama maksudnya adalah username, sedangkan guest yang kedua maksudnya adalah password. Pada bagian```localhost:5672```, maksudnya adalah localhost sebagai hostname/ip address tempat AMQP dijalankan, sedangkan 5672 merupakan port tempat AMQP berkomunikasi (me-listen).
 
 <br>
 
